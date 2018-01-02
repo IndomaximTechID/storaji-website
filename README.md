@@ -1,19 +1,27 @@
-# {{ name }}
+# storaji-website
+This is Storaji Website as found on [storaji.org](http://storaji.org). Powered by PreactJS and UIkit 3.  
 
-## CLI Commands
-
+### Get your own and do some modification?
+#### Clone the repository.
 ``` bash
-# install dependencies
+git clone https://github.com/IndomaximTechID/storaji-website.git
+```
+#### Install all dependencies and start static server.
+``` bash
+# install all dependencies, using yarn
+yarn
+# or, using npm
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# test the production build locally
-npm run serve
+# serve with hot reload at localhost:8080, using yarn
+yarn start
+# or, using npm
+npm run start
 ```
-
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+#### Build for production.
+``` bash
+# build for production with minification, using yarn
+yarn start
+# or, using npm
+npm run start
+```

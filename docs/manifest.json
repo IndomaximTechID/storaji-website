@@ -1,0 +1,20 @@
+{
+  "name": "Storaji",
+  "github": "IndomaximTechID/storaji",
+  "short_name": "Storaji",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/icons/android-chrome-195x195.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/icons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
