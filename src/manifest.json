@@ -1,14 +1,13 @@
 {
-  "name": "storaji-website",
-  "short_name": "storaji-website",
+  "name": "Storaji",
+  "github": "IndomaximTechID/storaji",
+  "short_name": "Storaji",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#fff",
-  "theme_color": "#673ab8",
   "icons": [
     {
-      "src": "/assets/icons/android-chrome-192x192.png",
+      "src": "/assets/icons/android-chrome-195x195.png",
       "type": "image/png",
       "sizes": "192x192"
     },
