@@ -1,14 +1,17 @@
 {
   "private": true,
   "name": "storaji-website",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build --no-prerender --dest docs",
-    "serve": "yarn build && preact serve",
-    "dev": "preact watch",
-    "lint": "eslint src"
+    "start": "if-env NODE_ENV=production && run-s -l \"serve {@}\" --|| run-s -l \"dev {@}\" --",
+    "build": "run-s -l \"preact:build --no-prerender --dest docs {@}\" --",
+    "serve": "run-s build -l \"preact:serve {@}\" --",
+    "dev": "run-s -l \"preact:watch {@}\" --",
+    "lint": "eslint src",
+    "preact:build": "preact build",
+    "preact:serve": "preact serve",
+    "preact:watch": "preact watch"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
@@ -27,6 +30,7 @@
   },
   "dependencies": {
     "json-loader": "^0.5.7",
+    "npm-run-all": "^4.1.2",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.7",
