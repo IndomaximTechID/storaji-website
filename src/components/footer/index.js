@@ -11,9 +11,14 @@ export default class Header extends Component {
 			<div class="uk-section-small">
 				<div class="uk-container uk-container-expand uk-text-center uk-position-relative">
 					<ul uk-margin class="uk-subnav tm-subnav uk-flex-inline uk-flex-center uk-margin-remove-bottom">
-						<li class="uk-first-column">
+						<li>
 							<span>
-								ALL RIGHTS RESERVED &copy; 2017. <a href={githubInfo.owner.html_url}>@{githubInfo.owner.login}</a>
+								ALL RIGHTS RESERVED &copy; 2017.
+							</span>
+						</li>
+						<li>
+							<span>
+								<a href={githubInfo.owner.html_url}>@{githubInfo.owner.login}</a>
 							</span>
 						</li>
 					</ul>
