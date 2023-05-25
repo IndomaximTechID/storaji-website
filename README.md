@@ -1,5 +1,5 @@
 # storaji-website
-This is Storaji Website as found on [storaji.org](http://storaji.org). Powered by PreactJS and UIkit 3.  
+This is Storaji Website. Powered by PreactJS and UIkit 3.  
 
 ### Get your own and do some modification?
 #### Clone the repository.
